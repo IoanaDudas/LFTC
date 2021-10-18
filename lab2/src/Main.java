@@ -17,5 +17,8 @@ public class Main {
         System.out.println(st.Search("l"));
         System.out.println(st.Search("ab"));
         System.out.println(st.Search("ba"));
+
+        LanguageSpecification spec = new LanguageSpecification();
+        System.out.println(spec.toString());
     }
 }
