@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args){
+    static void testSymbolTable() {
         SymbolTable st = new SymbolTable(10);
 
         System.out.println(st.Add("a"));
@@ -17,8 +17,16 @@ public class Main {
         System.out.println(st.Search("l"));
         System.out.println(st.Search("ab"));
         System.out.println(st.Search("ba"));
+    }
 
-        LanguageSpecification spec = new LanguageSpecification();
-        System.out.println(spec.toString());
+    public static void main(String[] args){
+        Scanner s = new Scanner();
+        s.ScanFile("src/files/p1.txt");
+        Scanner s1 = new Scanner();
+        s1.ScanFile("src/files/p2.txt");
+        Scanner s2 = new Scanner();
+        s2.ScanFile("src/files/p3.txt");
+        Scanner s3 = new Scanner();
+        s3.ScanFile("src/files/p1err.txt");
     }
 }

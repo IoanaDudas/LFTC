@@ -1,0 +1,31 @@
+Token START on position: -1
+Token int on position: -1
+Error at line 2. Invalid token: 7b2c
+Token , on position: -1
+Token c on position: 49
+Token ; on position: -1
+Token char on position: -1
+Token a on position: 47
+Token ; on position: -1
+Token a on position: 47
+Token = on position: -1
+Error at line 5. Invalid token: ‘’
+Token ; on position: -1
+Token c on position: 49
+Token = on position: -1
+Error at line 6. Invalid token: -0
+Token ; on position: -1
+Token if on position: -1
+Token ( on position: -1
+Token c on position: 49
+Token >= on position: -1
+Token 5 on position: -1
+Token ) on position: -1
+Token { on position: -1
+Token write on position: -1
+Token ( on position: -1
+Token a on position: 47
+Token ) on position: -1
+Token ; on position: -1
+Token } on position: -1
+Token END on position: -1

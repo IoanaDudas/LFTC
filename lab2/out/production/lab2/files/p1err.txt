@@ -1,0 +1,14 @@
+START
+
+	int 7b2c, c;
+	char a;
+	
+	a = ‘’;
+	c = -0;
+	
+	if ( c >= 5 )
+	{
+		write(a);
+	}
+
+END

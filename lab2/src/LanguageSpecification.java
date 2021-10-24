@@ -4,10 +4,10 @@ import java.util.List;
 
 public class LanguageSpecification {
 
-    private final String[] separators = {"[", "]", "(", ")", ";", " ", ":", "\n", "\t"};
+    private final String[] separators = {"[", "]", "(", ")", "{", "}", ";", " ", ":", ",", "\n", "\t"};
     private final String[] operators = {"+", "-", "*", "/", "%", "=", "<", "<=", "==", ">=", ">", "!=", "&&", "||", "!", "++", "--"};
     private final String[] reservedWords = {"int", "string", "char", "bool", "return", "while", "do",
-            "for", "if", "else", "read", "write", "struct", "or", "and"};
+            "for", "if", "else", "read", "write", "struct", "or", "and", "START", "END", "true", "false"};
     private final HashMap<String, Integer> codification;
 
     public LanguageSpecification () {

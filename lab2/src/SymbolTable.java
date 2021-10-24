@@ -54,6 +54,16 @@ public class SymbolTable {
     }
 
     public String toString (){
-        return Arrays.toString(codification);
+        StringBuilder st = new StringBuilder("\nSymbol Table\nPos\tToken\n");
+        for (int i = 0; i < codification.length; i++) {
+            if (codification[i] != null) {
+                st.append(i);
+                st.append('\t');
+                st.append(codification[i]);
+                st.append('\n');
+            }
+        }
+        return st.toString();
     }
+
 }
