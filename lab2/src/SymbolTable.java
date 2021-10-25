@@ -63,6 +63,7 @@ public class SymbolTable {
                 st.append('\n');
             }
         }
+        st.append('\n');
         return st.toString();
     }
 

@@ -3,8 +3,6 @@ Symbol Table
 Pos	Token
 2	-9
 3	5
-45	ab
-46	ba
 47	a
 48	b
 49	c
@@ -19,10 +17,6 @@ Token b on position: 48
 Token ; on position: -1
 Token char on position: -1
 Token a on position: 47
-Token , on position: -1
-Token ab on position: 45
-Token , on position: -1
-Token ba on position: 46
 Token ; on position: -1
 Token a on position: 47
 Token = on position: -1

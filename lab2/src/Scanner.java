@@ -38,7 +38,7 @@ public class Scanner {
         try {
             filename = "src/files/output/" + filename.substring(9, filename.length() - 4) + "Output.txt";
             FileWriter fw = new FileWriter(filename);
-//            fw.write(symbolTable.toString());
+            fw.write(symbolTable.toString());
 //            fw.write(pif.toString());
             fw.write(output.toString());
             fw.close();
@@ -106,8 +106,10 @@ public class Scanner {
 
             if (isConstant(token)){
                 int code = specification.getCodification().get("constant"); // 1
-                pif.Add(code, -1);
-                output.append("Token " + token + " on position: " + -1 + "\n");
+                symbolTable.Add(token);
+                var position = symbolTable.Search(token);
+                pif.Add(code, position);
+                output.append("Token " + token + " on position: " + position + "\n");
             }
             else if ((token.equals("-") || token.equals("+")) && (isNumber(tokens.get(i + 1))) &&
                     (lastToken.equals("=") || lastToken.equals("("))) {
@@ -115,8 +117,10 @@ public class Scanner {
                 i++;
                 if (!token.equals("-0")){
                     int code = specification.getCodification().get("constant"); // 1
-                    pif.Add(code, -1);
-                    output.append("Token " + token + " on position: " + -1 + "\n");
+                    symbolTable.Add(token);
+                    var position = symbolTable.Search(token);
+                    pif.Add(code, position);
+                    output.append("Token " + token + " on position: " + position + "\n");
                 }
                 else {
                     output.append("Error at line " + line + ". Invalid token: " + token + "\n");

@@ -20,8 +20,8 @@ public class Main {
     }
 
     public static void main(String[] args){
-        Scanner s = new Scanner();
-        s.ScanFile("src/files/p1.txt");
+//        Scanner s = new Scanner();
+//        s.ScanFile("src/files/p1.txt");
         Scanner s1 = new Scanner();
         s1.ScanFile("src/files/p2.txt");
         Scanner s2 = new Scanner();
