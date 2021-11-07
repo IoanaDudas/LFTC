@@ -19,14 +19,21 @@ public class Main {
         System.out.println(st.Search("ba"));
     }
 
+    public static void testFA(){
+        var fa = new FA("src/files/FA.in");
+        var ui = new Console(fa);
+        ui.run();
+    }
+
     public static void main(String[] args){
-//        Scanner s = new Scanner();
-//        s.ScanFile("src/files/p1.txt");
+        Scanner s = new Scanner();
+        s.ScanFile("src/files/p1.txt");
         Scanner s1 = new Scanner();
         s1.ScanFile("src/files/p2.txt");
-        Scanner s2 = new Scanner();
-        s2.ScanFile("src/files/p3.txt");
-        Scanner s3 = new Scanner();
-        s3.ScanFile("src/files/p1err.txt");
+//        Scanner s2 = new Scanner();
+//        s2.ScanFile("src/files/p3.txt");
+//        Scanner s3 = new Scanner();
+//        s3.ScanFile("src/files/p1err.txt");
+//        testFA();
     }
 }

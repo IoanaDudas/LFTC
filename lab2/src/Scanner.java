@@ -10,6 +10,7 @@ public class Scanner {
     SymbolTable symbolTable = new SymbolTable(50);
     ProgramInternalForm pif = new ProgramInternalForm();
     LanguageSpecification specification = new LanguageSpecification();
+    FA fa = new FA();
 
     public Scanner() {}
 
@@ -173,11 +174,17 @@ public class Scanner {
     }
 
     public boolean isConstant(String token){
-        return isNumber(token) || isString(token) || isCharacter(token);
+//        return isNumber(token) || isString(token) || isCharacter(token);
+        fa = new FA();
+        fa.readFromFile("src/files/numberFA.in");
+        return fa.isAccepted(token) || isString(token) || isCharacter(token);
     }
 
     public boolean isIdentifier(String token){
-        String pattern = "^[a-zA-Z]([a-zA-Z0-9_]*$)";
-        return token.matches(pattern);
+//        String pattern = "^[a-zA-Z]([a-zA-Z0-9_]*$)";
+//        return token.matches(pattern);
+        fa = new FA();
+        fa.readFromFile("src/files/identifierFA.in");
+        return fa.isAccepted(token);
     }
 }

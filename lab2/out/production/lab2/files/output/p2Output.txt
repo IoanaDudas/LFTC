@@ -1,13 +1,10 @@
 
 Symbol Table
 Pos	Token
-0	2
 23	div
 41	prime
 45	-2
 47	a
-48	0
-49	1
 
 Token START on position: -1
 Token int on position: -1
@@ -37,7 +34,7 @@ Token div on position: 23
 Token <= on position: -1
 Token a on position: 47
 Token / on position: -1
-Token 2 on position: 0
+Error at line 10. Invalid token: 2
 Token && on position: -1
 Token prime on position: 41
 Token == on position: -1
@@ -50,7 +47,7 @@ Token a on position: 47
 Token % on position: -1
 Token div on position: 23
 Token == on position: -1
-Token 0 on position: 48
+Error at line 12. Invalid token: 0
 Token ) on position: -1
 Token { on position: -1
 Token prime on position: 41
@@ -62,7 +59,7 @@ Token div on position: 23
 Token = on position: -1
 Token div on position: 23
 Token + on position: -1
-Token 1 on position: 49
+Error at line 16. Invalid token: 1
 Token ; on position: -1
 Token } on position: -1
 Token END on position: -1
