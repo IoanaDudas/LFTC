@@ -103,7 +103,9 @@ public class FA {
                 String[] tokens = line.split(" ");
                 AbstractMap.SimpleEntry<String, String> key = new AbstractMap.SimpleEntry<>(tokens[0], tokens[1]);
                 if(S.containsKey(key)){
-                    S.get(key).add(tokens[2]);
+                    if(!S.get(key).contains(tokens[2])){
+                        S.get(key).add(tokens[2]);
+                    }
                 }
                 else{
                     ArrayList<String> value = new ArrayList<>(Collections.singletonList(tokens[2]));
